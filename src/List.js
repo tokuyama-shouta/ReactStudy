@@ -1,6 +1,15 @@
-
+import {useEffect} from 'react'
 
 export const List = ({ langs }) => {
+
+  useEffect(() => {
+    console.log('List.js');
+
+    return () => {
+      console.log('unmount')
+    }
+  })
+
   return(
     <div>
       {
